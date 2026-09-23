@@ -7,7 +7,7 @@ const manifestPath = path.join(registryDirectory, 'registry.json');
 // Source examples only: never publish installed dependencies, build output,
 // repository metadata, local secrets, or machine-generated caches.
 const excludedDirectories = new Set(['node_modules', '.git', '.next', 'out', 'build', 'dist', 'coverage', '.vercel', '.turbo']);
-const excludedFile = (name) => name === '.DS_Store' || name.endsWith('.tsbuildinfo') || /^(npm-debug|yarn-debug|yarn-error|\.pnpm-debug)\.log/.test(name) || (/^\.env(?:\.|$)/.test(name) && !/\.(example|sample|template)$/.test(name));
+const excludedFile = (name) => name === '.DS_Store' || name === 'next-env.d.ts' || name.endsWith('.tsbuildinfo') || /^(npm-debug|yarn-debug|yarn-error|\.pnpm-debug)\.log/.test(name) || (/^\.env(?:\.|$)/.test(name) && !/\.(example|sample|template)$/.test(name));
 const validatePath = (value) => {
   if (typeof value !== 'string' || value.split('/').some(part => !part || part === '.' || part === '..' || /[\\:\x00-\x1f]/.test(part))) throw new Error(`Invalid example path: ${JSON.stringify(value)}`);
 };
