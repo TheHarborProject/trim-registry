@@ -1,0 +1,22 @@
+{
+  "name": "trim-registry",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs && npm run registry:validate",
+    "registry:generate": "node scripts/update-example-files.mjs && npm run registry:validate",
+    "registry:validate": "node scripts/validate-examples.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.21.0",
+      "onFail": "warn"
+    }
+  },
+  "type": "module"
+}
