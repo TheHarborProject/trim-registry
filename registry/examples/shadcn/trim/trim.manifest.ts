@@ -2,10 +2,12 @@
 // `trim new control` appends to this file automatically. Entries are kept
 // in lexical id order, so regeneration is deterministic regardless of the
 // order controls were added in.
+import highContrast from "./controls/high-contrast.trim";
 import starter from "./controls/starter.trim";
 import textSize from "./controls/text-size.trim";
 
 export const trimControls = [
+  highContrast,
   starter,
   textSize,
 ] as const;

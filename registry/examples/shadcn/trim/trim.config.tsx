@@ -21,5 +21,12 @@ export default defineTrimConfig({
       label: "Text",
       controls: ["text-size"],
     },
+    {
+      id: "contrast",
+      label: "Contrast",
+      controls: [
+        "high-contrast",
+      ],
+    },
   ],
 });

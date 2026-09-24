@@ -1,0 +1,22 @@
+/* Strengthen content contrast using the host theme's existing foreground. */
+.enabled p {
+  color: var(--foreground);
+}
+
+.enabled a {
+  border-color: var(--foreground);
+  outline: 2px solid var(--foreground);
+  outline-offset: 2px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+}
+
+.enabled a:hover {
+  text-decoration-thickness: 3px;
+}
+
+.enabled a:focus-visible {
+  outline-width: 4px;
+  outline-offset: 5px;
+}
