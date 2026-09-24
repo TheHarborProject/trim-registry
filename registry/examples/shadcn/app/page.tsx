@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { StarterDemo } from "@/trim/StarterDemo";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
             The Trim panel is available in the bottom right corner.
           </p>
+          <StarterDemo />
         </div>
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
           <a

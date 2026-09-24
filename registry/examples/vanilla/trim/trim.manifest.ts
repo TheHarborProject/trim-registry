@@ -3,7 +3,9 @@
 // in lexical id order, so regeneration is deterministic regardless of the
 // order controls were added in.
 import starter from "./controls/starter.trim";
+import textSize from "./controls/text-size.trim";
 
 export const trimControls = [
   starter,
+  textSize,
 ] as const;

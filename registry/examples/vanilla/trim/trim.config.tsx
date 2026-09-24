@@ -14,5 +14,12 @@ export default defineTrimConfig({
       label: "Example",
       controls: ["starter"],
     },
+    {
+      id: "text",
+      label: "Text",
+      controls: [
+        "text-size",
+      ],
+    },
   ],
 });

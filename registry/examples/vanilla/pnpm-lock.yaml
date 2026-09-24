@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@theharborproject/trim':
-        specifier: ^0.2.0
-        version: 0.2.0(@types/node@20.19.43)(react@19.2.8)
+        specifier: ^0.2.3
+        version: 0.2.3(@types/node@20.19.43)(react@19.2.8)
       next:
         specifier: 16.3.5
         version: 16.3.5(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@20.19.43)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -686,8 +686,8 @@ packages:
   '@tailwindcss/postcss@4.3.3':
     resolution: {integrity: sha512-JTSZZGQi1AyKirbLN3azmjVzef92tcX7h+iSqPdaeStyFpGpDlKvvpxeOE8njhbUanbRwr3z8DyzhICWnMtQeg==}
 
-  '@theharborproject/trim@0.2.0':
-    resolution: {integrity: sha512-x5Z5jX4i5Zy3I343208uYmOHDhv2yu9VIsbVur2PPXaXQgKx7pExBKVZWPtKrc/xXsgzgvo+R8z1o7kXQ9c39A==}
+  '@theharborproject/trim@0.2.3':
+    resolution: {integrity: sha512-lijNoHCyd8btR0Q4vI5aFJlkUGV+JkYhZ5eLNg0KeFjJWP+UPxjJVEP0kx08BufiEqOiVG6jORQ1e/8+C0JkVg==}
     engines: {node: '>=18.17'}
     hasBin: true
     peerDependencies:
@@ -2761,7 +2761,7 @@ snapshots:
       postcss: 8.5.28
       tailwindcss: 4.3.3
 
-  '@theharborproject/trim@0.2.0(@types/node@20.19.43)(react@19.2.8)':
+  '@theharborproject/trim@0.2.3(@types/node@20.19.43)(react@19.2.8)':
     dependencies:
       '@inquirer/prompts': 8.7.2(@types/node@20.19.43)
       '@typescript/typescript6': 6.0.2

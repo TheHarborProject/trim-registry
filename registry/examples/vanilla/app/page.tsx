@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { AccessibleText } from "@/trim/AccessibleText";
 
 export default function Home() {
   return (
@@ -12,14 +13,16 @@ export default function Home() {
           height={20}
           priority
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            This is a vanilla example with Trim.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            The Trim panel is available in the bottom right corner.
-          </p>
-        </div>
+        <AccessibleText>
+          <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
+            <h1 className="text-[2em] font-semibold leading-tight tracking-tight text-black dark:text-zinc-50">
+              This is a vanilla example with Trim.
+            </h1>
+            <p className="max-w-md text-[1.125em] leading-relaxed text-zinc-600 dark:text-zinc-400">
+              Change the text size from the Trim accessibility panel.
+            </p>
+          </div>
+        </AccessibleText>
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
           <a
             className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
